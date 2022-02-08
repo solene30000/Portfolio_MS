@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinéma - Maison de la culture</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+
+    <!--favicon-img-->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <!--favicon-img-->
+
+    <link rel="stylesheet" href="css/index.css">
+
+
+</head>
+
+<body>
+
+    <!-- MAIN CONTENT -->
+
+    <main id="Présentation">
+
+
+        <!-- CUSTOM CURSOR -->
+        <div class="cursor scale"></div>
+        <div class="cursor-two scale"></div>
+        <!-- CUSTOM CURSOR -->
+
+
+        <div id="preloader">
+            <div class="p">
+                <img src="images/headphone.png" alt="headphone">
+            </div>
+            <div class="p">La cinématographie</div>
+        </div>
+
+        <div id="Présentation-content">
+
+            <!-- NAVIGATION -->
+            <div class="navigation">
+                <div class="logo hover ">
+                    <a href="Accueil.html" class="text">La cinématographie</a>
+                </div>
+                <div class="menu-bar hover ">
+                    <div class="menu-bar-name text">
+                        Menu
+                    </div>
+                    <div class="menu-bar-lines text">
+                        <div class="menu-bar-line"></div>
+                        <div class="menu-bar-line"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- NAVIGATION -->
+            <div id="header">
+
+
+
+
+
+
+                <div class="scrolling-part">
+
+                </div>
+
+
+                <div class="heading">
+                    <span class="text">
+                    Tarifs
+                </span>
+                </div>
+
+
+                <div class="table100 ver2 m-b-110">
+                    <table data-vertable="ver2">
+                        <thead>
+                            <tr class="row100 head">
+                                <th class="column100 column1" data-column="column1"></th>
+                                <th class="column100 column2" data-column="column2"><strong>NOMBRE</strong></th>
+                                <th class="column100 column3" data-column="column3"><strong>COÛT</strong></th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+
+
+                            <tr class="row100">
+                                <td class="column100 column1" data-column="column1">Nombre de personnes au total</td>
+                                <td><input type="number" value="0" min="0" onfocus="this.value='' "></td>
+                                <td><input type="text" value="" readonly></td>
+
+                            </tr>
+
+                            <tr class="row100">
+                                <td class="column100 column1" data-column="column1">Dont adultes</td>
+                                <td><input onfocus="this.value='' " type="number" id="field1" value="0" min="0" onchange="tarifs()"></td>
+                                <td><input type="number" id="field11" value="" readonly> </td>
+
+                            </tr>
+
+                            <tr class="row100">
+                                <td class="column100 column1" data-column="column1">Donts enfants de moins de 12 ans</td>
+                                <td> <input onfocus="this.value='' " type="number" id="field2" value="0" min="0" onchange="tarifs()"></td>
+                                <td> <input type="number" id="field22" readonly value=""></td>
+
+                            </tr>
+
+                            <tr class="row100">
+                                <td class="column100 column1" data-column="column1">enfants de 12 à 16 ans</td>
+                                <td><input onfocus="this.value='' " type="number" id="field3" value="0" min="0" onchange="tarifs()"></td>
+                                <td><input type="number" readonly id="field33"></td>
+
+                            </tr>
+
+                            <tr class="row100">
+                                <td class="column100 column1" data-column="column1">enfants de 16 à 18 ans</td>
+                                <td><input onfocus="this.value='' " type="number" id="field4" value="0" min="0" onchange="tarifs()"></td>
+                                <td><input type="number" readonly id="field44"></td>
+
+                            </tr>
+
+
+                            <tr class="row100">
+                                <td> </td>
+                                <td>Total</td>
+                                <td><input type="number" id="fieldsomme" readonly></td>
+
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                </span>
+    </main>
+    </div>
+
+
+    <!-- HEADPHONE IMG -->
+    <div class="headphone img text">
+        <img src="images/headphone.png" title="headphone zone" class="text" alt="headphone">
+    </div>
+    <!-- HEADPHONE IMG -->
+
+
+    </div>
+    </div>
+
+
+
+    <!-- NAVIGATION CONTENT -->
+
+    <div class="navigation-content">
+        <div class="navigation-logo hover opacity">
+            <a href="#" class="text">Maison de la culture</a>
+        </div>
+        <ul class="navigation-ul">
+            <li><a href="Accueil.html" data-text="Acceuil" data-img="images/bg-image-three.jpg">Accueil</a></li>
+            <li><a href="Présentation.html" data-text="Présentation" data-img="images/about-img.jpg">Présentation</a></li>
+            <li><a href="Galerie.html" data-text="Galerie" data-img="images/album-thumbnail-nine.jpg">Galerie</a></li>
+            <li><a href="Calendrier.html" data-text="Calendrier" data-img="images/main-bg-three.jpg">Calendrier</a></li>
+            <li><a href="Tarifs.html" data-text="Tarifs" data-img="images/tarifs.png">Tarifs</a></li>
+            <li><a href="contact-one.html" data-text="Formulaire" data-img="images/2.png">Formulaire</a></li>
+        </ul>
+        <div class="navigation-close hover about-close opacity">
+            <div class="navigation-close-line"></div>
+            <div class="navigation-close-line"></div>
+        </div>
+
+        <div class="project-preview"></div>
+
+
+        <!-- HEADPHONE IMG -->
+        <div class="headphone-navigation opacity">
+            <img src="images/headphone.png" title="headphone zone" class="text" alt="headphone">
+        </div>
+        <!-- HEADPHONE IMG -->
+
+
+
+
+    </div>
+
+    <!-- NAVIGATION CONTENT -->
+
+
+
+
+    </main>
+    <!-- MAIN CONTENT -->
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bez.js"></script>
+    <script src="js/pace.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
